@@ -1,7 +1,0 @@
-#Dentro do ambiente do linux, criar a variável
-export TWORPTEST="true100%"
-
-#!/bin/bash
-read -t 20 TWORPTEST
-echo TWORPTEST
-
