@@ -1,0 +1,6 @@
+FROM python:lastest
+
+COPY variavel.py / 
+ENV TWORPTEST=true100%
+
+CMD [ "python","-u","variavel.py" ]

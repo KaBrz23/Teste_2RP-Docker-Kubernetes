@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: teste_2rp-vagrant-python
+spec:
+  selector:
+    app: Cluster
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 

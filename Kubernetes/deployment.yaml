@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: teste_2rp-vagrant-python
+  labels:
+    app: teste_2rp-vagrant-python
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: teste_2rp-vagrant-python
+  template:
+    metadata:
+      labels:
+        app: teste_2rp-vagrant-python
+    spec:
+      containers:
+      - name: teste_2rp-vagrant-python
+        image: [caminho da imagem criada]
+        ports:
+        - containerPort: 80
+
+#kubectl apply -f deployment.yaml
+#este comando cria o deployment
